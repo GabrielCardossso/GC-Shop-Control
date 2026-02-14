@@ -1,58 +1,70 @@
-# Sistema de Orçamentos e Pedidos (Em Desenvolvimento)
+Sistema de Orçamentos e Pedidos (Versão Inicial Publicada)
+🎯 Finalidade do Projeto
 
-## 🎯 Finalidade do Projeto
+Este projeto é um mini sistema para gerenciar produtos, orçamentos e pedidos, criado com foco em aprendizado de sistemas web completos. Ele já permite realizar operações básicas e serve como base para futuras melhorias.
 
-Este projeto é um mini sistema para gerenciar produtos, orçamentos e pedidos, com o objetivo de aprender e aplicar conceitos de sistemas web completos, incluindo CRUD, banco de dados relacional e fluxo de negócios real.
+Na versão atual, você consegue:
 
-O sistema permitirá:
-- Cadastro de produtos
-- Criação de orçamentos adicionando produtos
-- Conversão de orçamentos em pedidos
-- Armazenamento de todas as informações em um banco SQLite
+Cadastrar produtos
 
----
+Criar orçamentos adicionando produtos
 
-## 🛠 Tecnologias Previstas
+Converter orçamentos em pedidos
 
-- [Next.js](https://nextjs.org/) (TypeScript, App Router)
-- [Tailwind CSS](https://tailwindcss.com/) para estilização rápida e moderna
-- [Zod](https://zod.dev/) para validação de dados
-- SQLite como banco de dados relacional leve
+Visualizar listagens de produtos, orçamentos e pedidos
 
----
+Salvar todos os dados em um banco SQLite local
 
-## 📂 Estrutura do Projeto
+Obs: O sistema ainda não está hospedado; o acesso é local via localhost.
 
-```
+🛠 Tecnologias Utilizadas
+
+Next.js
+ (TypeScript, App Router)
+
+Tailwind CSS
+ para estilização moderna
+
+Zod
+ para validação de dados
+
+SQLite como banco de dados relacional leve
+
+📂 Estrutura do Projeto
 app/
 components/
 lib/
 schemas/
 database/
-```
 
-- `app/` → telas e rotas do Next.js  
-- `components/` → componentes visuais reutilizáveis  
-- `lib/` → conexão com o banco (`db.ts`)  
-- `schemas/` → validação de dados com Zod  
-- `database/` → arquivo SQLite (`database.db`)  
+app/ → telas e rotas do Next.js
 
----
+components/ → componentes visuais reutilizáveis
 
-## ⚡ Funcionalidades Planejadas
+lib/ → conexão com o banco (db.ts)
 
-- **Produtos:** Listagem, criação e validação de dados  
-- **Orçamentos:** Adição de produtos, cálculo de total e armazenamento  
-- **Pedidos:** Conversão de orçamentos em pedidos e atualização de status  
+schemas/ → validação de dados com Zod
 
----
+database/ → arquivo SQLite (database.db)
 
-## 🧠 O que pretendo aprender com este projeto
+⚡ Funcionalidades Atuais
 
-- Estrutura de sistemas web modernos  
-- CRUD completo (Produtos, Orçamentos, Pedidos)  
-- Banco relacional com SQLite  
-- Validação de formulários com Zod  
-- Separação entre Front-end e API  
-- Fluxo de negócio (Orçamento → Pedido)
+Produtos: Listagem, criação e validação
 
+Orçamentos: Adição de produtos, cálculo de total e armazenamento
+
+Pedidos: Conversão de orçamentos em pedidos, visualização e status inicial
+
+🧠 Aprendizados até agora
+
+Estrutura de sistemas web modernos com Next.js e App Router
+
+Implementação de CRUD completo (Produtos, Orçamentos, Pedidos)
+
+Uso de banco relacional SQLite com tabelas e relações
+
+Validação de formulários e dados com Zod
+
+Separação entre Front-end e API
+
+Implementação do fluxo real de negócio: Orçamento → Pedido
